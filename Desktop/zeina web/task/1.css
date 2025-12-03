@@ -1,0 +1,76 @@
+div{
+    
+    flex: wrap;
+}
+.bg{
+    
+    justify-content:center;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+   background-image:url(bg.png);
+   background-size: cover;
+   margin-right: 100px;
+   margin-left: 20px;
+   align-items: center;
+   background-color: rgba(255, 255, 255, 0);
+   flex-wrap: wrap;
+
+
+}
+
+
+
+
+
+.highlight{
+    color: rgb(4, 101, 101);
+    flex: wrap;
+}
+
+.b{
+ background-color: rgb(16, 144, 144);
+ color: white;
+ flex: wrap;
+
+ 
+}
+.about{
+    justify-content:center;
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+   flex: wrap;
+   align-items: center;
+  
+
+}
+.icons{
+border: 2px solid rgb(16, 144, 144);
+padding:20px;
+display:flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-between; 
+align-items: center; 
+
+}
+.colored-icon {
+  filter: brightness(0) saturate(100%) invert(38%) sepia(56%) saturate(934%) hue-rotate(140deg) brightness(92%) contrast(85%);
+}
+
+.icons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+.banner{
+   align-items: cover;
+}
+.ourblog{
+    text-align: center;
+}
+
+.blog{
+    
+}
