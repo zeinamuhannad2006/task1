@@ -22,25 +22,20 @@ body.dark-mode {
 }
 
 
-
-
-
-
-
 div{
     
     flex: wrap;
 }
 .c1{
      justify-content:center;
-   
     flex-direction: column;
      box-shadow: 0 0px 9px rgba(16,144,144);
-     align-items: center;
+     align-items: right;
       background-color: white;
+
 }
 .logo-img{
-    justify-content:left;
+    justify-content:center;
     flex: wrap;
 
 }
@@ -53,7 +48,7 @@ div{
    align-items: center;
    background-color: rgba(255, 255, 255, 0);
    flex: wrap;
-   background-color: var(--secondary-bg);
+ 
 }
 
 
@@ -100,7 +95,7 @@ align-items: center;
     gap: 20px;
     padding: 20px;
     flex: wrap;
-    background-color: var(--secondary-bg);
+    
     
 }
 .banner{
@@ -116,7 +111,7 @@ align-items: center;
     padding: 15px;
     flex: wrap; 
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    background-color: var(--secondary-bg);
+    
     
 }
 
@@ -175,7 +170,7 @@ align-items: center;
 }
 .review{
     text-align:center;
-    background-color: var(--secondary-bg);
+   
 }
 .col{
     flex: 100px;
@@ -187,8 +182,8 @@ align-items: center;
     justify-content: center;
     padding:10px 10px;
     flex: wrap;
-    background-color: var(--footer-bg);
-  color: var(--footer-text);
+   
+ 
 }
 .imglast{
     width:10px;
@@ -239,6 +234,63 @@ align-items: center;
 }
 
 
+
+#menu-toggle {
+  display: none;
+}
+
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: var(--text-color);
+}
+
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -250px; 
+  width: 200px;
+  height: 100%;
+  background-color: var(--secondary-bg);
+  padding-top: 60px;
+  transition: right 0.3s;
+  gap: 20px;
+  z-index: 999;
+}
+
+
+.mobile-nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+
+#menu-toggle:checked ~ .mobile-nav {
+  right: 0; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+  
+  
+  .c1 div {
+    display: none;
+  }
+}
 
 
 
