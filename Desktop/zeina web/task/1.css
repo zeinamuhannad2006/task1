@@ -21,8 +21,20 @@ body.dark-mode {
   --btn-bg: #2080a0;
 }
 
+.div1{
+    position:fixed;
+    background-color: white;
+    margin: top 30px;
 
-div{
+}
+.div2{
+    margin-top:50px;
+    margin-left:600px;
+    margin-right: 400px;
+}
+
+
+.div{
     
     flex: wrap;
 }
